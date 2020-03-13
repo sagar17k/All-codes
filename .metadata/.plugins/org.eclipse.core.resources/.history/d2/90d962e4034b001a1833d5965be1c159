@@ -1,0 +1,25 @@
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
+
+public class PracticeAssign {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\alahiri\\Downloads\\chromedriver_win32\\chromedriver.exe");
+		WebDriver w = new ChromeDriver();
+		w.get("https://rahulshettyacademy.com/AutomationPractice/");
+		w.findElement(By.cssSelector("input[id='checkBoxOption1']")).click();
+		Assert.assertTrue(w.findElement(By.cssSelector("input[value='option1']")).isSelected());
+		System.out.println(w.findElement(By.cssSelector("input[id='checkBoxOption1']")).isSelected());
+		w.findElement(By.cssSelector("input[id='checkBoxOption1']")).clear();
+		System.out.println(w.findElement(By.cssSelector("input[id='checkBoxOption1']")).isSelected());
+		Assert.assertFalse(w.findElement(By.cssSelector("input[value='option1']")).isSelected());
+		System.out.println(w.findElements(By.cssSelector("input[type='checkbox']")).size());
+		
+		
+
+	}
+
+}

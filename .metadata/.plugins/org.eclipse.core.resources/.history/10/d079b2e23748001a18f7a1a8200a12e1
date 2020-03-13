@@ -1,0 +1,18 @@
+
+public class Basics extends Methods{
+
+	public void parentValidate() {
+		System.out.println("Hi from parent");
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	
+		Methods m = new Methods();
+		m.Validate();
+		m.parentValidate();
+
+		
+
+	}
+
+}

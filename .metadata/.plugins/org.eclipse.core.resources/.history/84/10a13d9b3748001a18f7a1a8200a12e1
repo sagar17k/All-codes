@@ -1,0 +1,18 @@
+
+public class Basics {
+
+	int a =10;
+	int b = 20;
+	int total;
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Basics b = new Basics();
+		b.total = b.a + b.b;
+        System.out.println("Sum is" +" " +b.total);
+		
+		
+
+	}
+
+}

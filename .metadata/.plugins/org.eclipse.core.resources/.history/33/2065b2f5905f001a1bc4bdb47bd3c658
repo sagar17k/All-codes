@@ -1,0 +1,22 @@
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class FramesAssign {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.setProperty("webdriver.chrome.driver","C:\\Users\\alahiri\\Downloads\\chromedriver_win32\\chromedriver.exe");
+		WebDriver w = new ChromeDriver();
+		w.manage().window().maximize();
+		/*w.get("https://the-internet.herokuapp.com/nested_frames");
+		//System.out.println(w.findElements(By.tagName("frameset")).size());
+		w.switchTo().frame(w.findElement(By.xpath("//frameset[@name='frameset-middle'] //frame[@name='frame-middle']")));
+w.switchTo().parentFrame()*/
+		w.get("https://chercher.tech/practice/frames-example-selenium-webdriver");
+		w.switchTo().frame("frame1");
+		w.switchTo().frame("frame3");
+		w.findElement(By.xpath("//input[@id='a']")).click();
+	}
+
+}

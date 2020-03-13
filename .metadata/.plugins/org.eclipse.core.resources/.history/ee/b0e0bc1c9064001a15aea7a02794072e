@@ -1,0 +1,16 @@
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
+public class Prac {
+
+	public static void main(String[] args) throws FileNotFoundException {
+		// TODO Auto-generated method stub
+
+		XSSFWorkbook xf = new XSSFWorkbook();
+		FileOutputStream fs = new FileOutputStream("C:\\Users\\alahiri\\OneDrive\\Documents\\new.xlsx");
+		
+	}
+
+}

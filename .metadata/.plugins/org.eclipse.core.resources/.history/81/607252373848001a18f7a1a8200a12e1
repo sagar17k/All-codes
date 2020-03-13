@@ -1,0 +1,32 @@
+
+public class Basics {
+
+	public void parentValidate() {
+		System.out.println("Hi from parent");
+	}
+	public static void main(String[] args) {
+		
+		// TODO Auto-generated method stub
+	
+		//Basics b = new Basics();
+		//b.parentValidate();
+		Methods m = new Methods();
+		m.Validate();
+		m.parentValidate();
+		
+		
+
+	}
+	
+	public class Methods extends Basics {
+
+		
+		public void Validate() {
+			
+			System.out.println("Hi from Method");
+		}
+		
+	}
+
+
+}
