@@ -19,7 +19,7 @@ public class Auto {
 		//Thread.sleep(5000);
 		driver.findElement(By.xpath("//span[text()='Select PDF files']")).click();
 		Thread.sleep(5000);
-		Runtime.getRuntime().exec("C:\\Users\\alahiri\\fileupld.exe");
+		Runtime.getRuntime().exec("C:\\Users\\alahiri\\fileupldsdsadadad.exe");
 		
 	}
 	
